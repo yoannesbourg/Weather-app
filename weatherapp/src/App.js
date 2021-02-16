@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import Api from './components/api/api'
+import Input from './components/input/input'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <div className="background"></div>
+        <main>
+          <Input />
+          <div>
+            <div className="location-box">
+              <div className="location">New York, US</div>
+              <div className="date">15/02/2021</div>
+            </div>
+
+            <div className="weather-box">
+              <div className="temp">
+                15 ºC
+              </div>
+
+              <div className="weather">
+                Cloud
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
   );
 }
