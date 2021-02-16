@@ -23,18 +23,19 @@ function App() {
 
   }
 
-  const image = `url('./img/beach')`
-
   return (
     <div className="app">
-      <div className="container" >
+      <div className="container">
         <div className="background"></div>
         <main>
           <Input onSearch={search}/>
 
           {(typeof weather.main != "undefined") ? (
             <div>
-              <Location city={weather.name} />
+              <Location 
+                city={weather.name} 
+                country={weather.sys.country}
+              />
               <Weather 
                 temperature={Math.round(weather.main.temp)}
                 weather={weather.weather[0].main}
