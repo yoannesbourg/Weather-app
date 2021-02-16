@@ -10,6 +10,20 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app {
   display: flex;
   justify-content: center;
@@ -36,7 +50,7 @@ body {
   background-size: cover;
   background-position: bottom;
   transform: 0.4 ease-out;
-  width: 60%;
+  width: 40%;
   height: 80vh;
 }
 
